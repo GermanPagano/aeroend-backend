@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 
 // Autenticación con Google Drive
 const auth = new google.auth.GoogleAuth({
-  keyFile: 'credentials.json',
+  keyFile: '/etc/secrets/credentials.json',
   scopes: ['https://www.googleapis.com/auth/drive.file'],
 });
 
