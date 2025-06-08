@@ -6,8 +6,9 @@ const { google } = require('googleapis');
 const path = require('path');
 require('dotenv').config();
 const cors = require('cors'); // 👈 esto
-app.use(cors()); // 👈 y esto
+
 const app = express();
+app.use(cors()); // 👈 y esto
 const upload = multer({ dest: 'uploads/' });
 const PORT = process.env.PORT || 5000;
 
