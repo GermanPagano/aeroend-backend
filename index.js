@@ -9,8 +9,9 @@ const cors = require('cors'); // 👈 esto
 
 const app = express();
 app.use(cors({
-  origin: 'https://formularioensayos.aeroend.com.ar',
+  origin: '*'
 }));
+
 
 const upload = multer({ dest: 'uploads/' });
 const PORT = process.env.PORT || 5000;
